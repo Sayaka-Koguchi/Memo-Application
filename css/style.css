@@ -1,0 +1,58 @@
+.wrapper {
+  padding: 80px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.task-add-panel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.task-show-panel {
+  margin-bottom: 24px;
+  border-top: solid 1px #efefef;
+}
+.task-show-panel li {
+  padding: 12px;
+  border-bottom: solid 1px #efefef;
+}
+
+.input-field {
+  width: 240px;
+  padding: 6px 8px;
+}
+
+#todoList{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+
+.btn {
+  width: 72px;
+  margin-left: 16px;
+  padding: 6px 8px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  appearance: none;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  width: 72px;
+  margin-left: 16px;
+  padding: 6px 8px;
+}
