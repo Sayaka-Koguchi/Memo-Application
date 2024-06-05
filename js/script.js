@@ -52,6 +52,13 @@ $("#addTodoBtn").on("click", function(){
     $("#todoText").val(""); // 入力枠のデータ削除
     }
 
+    //To doがなくなったらComplete!表示
+    if(task == null || taskList.length === 0){
+        $("#result").html("Complete! Well Done!");
+    }else{
+        $("#result").html("");
+    }    
+
 });
 
 //完了
@@ -69,6 +76,13 @@ $(document).on("click",".completeBtn",function(){
         $(this).find("completeBtn").data("index,i");//各完了ボタンのdata-index属性を更新
     });
 
+    //To doがなくなったらComplete!表示
+    if(task == null || taskList.length === 0){
+        $("#result").html("Complete! Well Done!");
+    }else{
+        $("#result").html("");
+    }
+
 });
 
 
@@ -84,8 +98,14 @@ $("#deleteTodoBtn").on("click", function(){
     // 画面上のタスクを削除
     $("#todoList").empty();
 
+    //"TO DO"追記
+    $("#todoList").text("- To Do -");
+
     //タスクリストの配列もクリア
     taskList = [];
+
+    //To doがなくなったらComplete!表示
+    $("#result").html("Complete! Well Done!");
 
     // alert("削除"); //クリックボタン確認
     
